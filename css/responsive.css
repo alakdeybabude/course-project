@@ -1,0 +1,129 @@
+@media(max-width:991px){
+    .header .nav-toggler {
+       
+        display: flex;
+        margin-right: 15px;
+    }
+    
+    .header .nav {
+      width: 100%;
+      position: absolute;
+      background-color: var(--dark-700);
+      top: 100%;
+      left: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+    .header #nav-check:checked ~ .nav {
+       visibility: visible;
+       opacity: 1;
+    }
+
+    .header .nav ul li{
+        margin: 0;
+        display: block;
+    }
+    .header .nav ul li a {
+       
+        text-align: center;
+        
+    }
+    .home-text h1 {
+        font-size: 40px;
+       
+    }
+    .home-text h1 span::after {
+       
+        bottom: 10px;
+      
+    }
+    .home-text h2 {
+        font-size: 20px;
+        
+    }
+    .home-text, .home-img {
+        width: 100%;
+       
+    }
+    .home-img {
+       margin-top: 70px;
+    }
+    .why-us-item,.course-item {
+        width: calc(50% - 30px);
+        
+    }
+    .footer-item {
+        width: 50%;
+        margin-bottom: 30px;
+      
+    }
+
+
+}
+
+@media(max-width:767px){
+    .contact-img, .contact-form,
+    .fun-facts-img, .fun-facts-items,
+    .home-text, .home-img {
+        width: 100%;
+       
+    }
+    .contact-form,
+    .fun-facts-items{
+        margin-top: 50px;
+    }
+    .home-text h1 {
+        font-size: 40px;
+       
+    }
+    .home-text h2 {
+        font-size: 18px;
+        
+    }
+    .section-title h2{
+        font-size: 30px;
+    }
+    .sex-padding{
+        padding: 70px 0;
+    }
+
+    .contact-img, .contact-form {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media(max-width:575px){
+     .fun-facts-item,
+    .why-us-item, .course-item{
+        width: calc(100% - 30px);
+        
+    }
+    .fun-facts-item h3 {
+        font-size: 30px;
+     
+    }
+
+    .fun-facts-item p {
+       font-size: 14px;
+       font-weight: 600;
+    }
+    .footer-item,
+    .review-item {
+        width: 100%;
+       
+      
+    }
+    .review-item {
+        text-align: center;
+       
+      
+    }
+
+
+}
